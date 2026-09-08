@@ -198,6 +198,7 @@ hr {{
     justify-content:space-between;
     min-height:58px;
     padding:.35rem .15rem;
+    margin-top:45px;   /* moves the navbar down */
     border-bottom:1px solid var(--line);
     background:var(--bg);
     box-shadow:none;
