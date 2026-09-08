@@ -1,0 +1,11 @@
+student_id,name,age,department,email,percentage
+1,Ram Charan,21,CSE,ram@example.com,87.5
+2,Sita,22,cse,sita@example.com,91
+3,John,200,Computer Science,john@example.com,88
+4,Ravi,,CSE,,76
+5,Ravi,,CSE,,76
+6,Anita,20,cse,anita@example.com,105
+7,Meena,19,ECE,meena@example.com,82
+8,Arun,-5,ECE,arun@example.com,79
+9,Kiran,21,computer science,kiran@example.com,90
+10,Deepa,20,ECE,deepa@example.com,84

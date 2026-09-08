@@ -1,0 +1,408 @@
+{
+    "profile": {
+        "dataset": {
+            "rows": 10,
+            "columns": 6,
+            "memory_usage_mb": 0.001
+        },
+        "missing_values": {
+            "total": 4,
+            "by_column": {
+                "student_id": {
+                    "missing_count": 0,
+                    "missing_percentage": 0.0
+                },
+                "name": {
+                    "missing_count": 0,
+                    "missing_percentage": 0.0
+                },
+                "age": {
+                    "missing_count": 2,
+                    "missing_percentage": 20.0
+                },
+                "department": {
+                    "missing_count": 0,
+                    "missing_percentage": 0.0
+                },
+                "email": {
+                    "missing_count": 2,
+                    "missing_percentage": 20.0
+                },
+                "percentage": {
+                    "missing_count": 0,
+                    "missing_percentage": 0.0
+                }
+            }
+        },
+        "duplicates": {
+            "total_rows": 0
+        },
+        "schema": [
+            {
+                "column": "student_id",
+                "dtype": "int64",
+                "nullable": false,
+                "unique_values": 10,
+                "sample_values": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "column": "name",
+                "dtype": "str",
+                "nullable": false,
+                "unique_values": 9,
+                "sample_values": [
+                    "Ram Charan",
+                    "Sita",
+                    "John"
+                ]
+            },
+            {
+                "column": "age",
+                "dtype": "float64",
+                "nullable": true,
+                "unique_values": 6,
+                "sample_values": [
+                    "21.0",
+                    "22.0",
+                    "200.0"
+                ]
+            },
+            {
+                "column": "department",
+                "dtype": "str",
+                "nullable": false,
+                "unique_values": 5,
+                "sample_values": [
+                    "CSE",
+                    "cse",
+                    "Computer Science"
+                ]
+            },
+            {
+                "column": "email",
+                "dtype": "str",
+                "nullable": true,
+                "unique_values": 8,
+                "sample_values": [
+                    "ram@example.com",
+                    "sita@example.com",
+                    "john@example.com"
+                ]
+            },
+            {
+                "column": "percentage",
+                "dtype": "float64",
+                "nullable": false,
+                "unique_values": 9,
+                "sample_values": [
+                    "87.5",
+                    "91.0",
+                    "88.0"
+                ]
+            }
+        ],
+        "unique_values": {
+            "student_id": 10,
+            "name": 9,
+            "age": 6,
+            "department": 5,
+            "email": 8,
+            "percentage": 9
+        },
+        "numeric_statistics": {
+            "student_id": {
+                "count": 10.0,
+                "mean": 5.5,
+                "std": 3.0276503540974917,
+                "min": 1.0,
+                "25%": 3.25,
+                "50%": 5.5,
+                "75%": 7.75,
+                "max": 10.0
+            },
+            "age": {
+                "count": 8.0,
+                "mean": 39.75,
+                "std": 65.36873433508889,
+                "min": -5.0,
+                "25%": 19.75,
+                "50%": 20.5,
+                "75%": 21.25,
+                "max": 200.0
+            },
+            "percentage": {
+                "count": 10.0,
+                "mean": 85.85,
+                "std": 8.673234690702195,
+                "min": 76.0,
+                "25%": 79.75,
+                "50%": 85.75,
+                "75%": 89.5,
+                "max": 105.0
+            }
+        },
+        "column_statistics": {
+            "student_id": {
+                "data_type": "int64",
+                "missing_count": 0,
+                "missing_percentage": 0.0,
+                "unique_values": 10
+            },
+            "name": {
+                "data_type": "str",
+                "missing_count": 0,
+                "missing_percentage": 0.0,
+                "unique_values": 9
+            },
+            "age": {
+                "data_type": "float64",
+                "missing_count": 2,
+                "missing_percentage": 20.0,
+                "unique_values": 6
+            },
+            "department": {
+                "data_type": "str",
+                "missing_count": 0,
+                "missing_percentage": 0.0,
+                "unique_values": 5
+            },
+            "email": {
+                "data_type": "str",
+                "missing_count": 2,
+                "missing_percentage": 20.0,
+                "unique_values": 8
+            },
+            "percentage": {
+                "data_type": "float64",
+                "missing_count": 0,
+                "missing_percentage": 0.0,
+                "unique_values": 9
+            }
+        }
+    },
+    "detection": {
+        "missing_values": {
+            "student_id": {
+                "missing_count": 0,
+                "missing_percentage": 0.0,
+                "has_missing": false
+            },
+            "name": {
+                "missing_count": 0,
+                "missing_percentage": 0.0,
+                "has_missing": false
+            },
+            "age": {
+                "missing_count": 2,
+                "missing_percentage": 20.0,
+                "has_missing": true
+            },
+            "department": {
+                "missing_count": 0,
+                "missing_percentage": 0.0,
+                "has_missing": false
+            },
+            "email": {
+                "missing_count": 2,
+                "missing_percentage": 20.0,
+                "has_missing": true
+            },
+            "percentage": {
+                "missing_count": 0,
+                "missing_percentage": 0.0,
+                "has_missing": false
+            }
+        },
+        "duplicates": {
+            "duplicate_count": 0,
+            "duplicate_percentage": 0.0,
+            "has_duplicates": false,
+            "duplicate_indices": []
+        },
+        "outliers": {
+            "student_id": {
+                "q1": 3.25,
+                "q3": 7.75,
+                "iqr": 4.5,
+                "lower_bound": -3.5,
+                "upper_bound": 14.5,
+                "outlier_count": 0,
+                "outlier_indices": [],
+                "has_outliers": false
+            },
+            "age": {
+                "q1": 19.75,
+                "q3": 21.25,
+                "iqr": 1.5,
+                "lower_bound": 17.5,
+                "upper_bound": 23.5,
+                "outlier_count": 2,
+                "outlier_indices": [
+                    2,
+                    7
+                ],
+                "has_outliers": true
+            },
+            "percentage": {
+                "q1": 79.75,
+                "q3": 89.5,
+                "iqr": 9.75,
+                "lower_bound": 65.125,
+                "upper_bound": 104.125,
+                "outlier_count": 1,
+                "outlier_indices": [
+                    5
+                ],
+                "has_outliers": true
+            }
+        }
+    },
+    "scoring": {
+        "score": 63.33,
+        "grade": "Fair",
+        "metrics": {
+            "total_rows": 10,
+            "total_columns": 6,
+            "total_cells": 60,
+            "missing_values": 4,
+            "missing_percentage": 6.67,
+            "duplicate_rows": 0,
+            "duplicate_percentage": 0.0,
+            "outliers": 3,
+            "outlier_percentage": 30.0
+        },
+        "penalties": {
+            "missing_values": 6.67,
+            "duplicates": 0.0,
+            "outliers": 30.0,
+            "total": 36.67
+        }
+    },
+    "validation": {
+        "valid": true,
+        "validation_score": 100.0,
+        "passed_rules": 5,
+        "failed_rules": 0,
+        "total_rules": 5,
+        "results": {
+            "no_missing_values": {
+                "rule": "no_missing_values",
+                "passed": true,
+                "missing_count": 0
+            },
+            "no_duplicate_rows": {
+                "rule": "no_duplicate_rows",
+                "passed": true,
+                "duplicate_count": 0
+            },
+            "numeric_values_valid": {
+                "rule": "numeric_values_valid",
+                "passed": true,
+                "invalid_values": {}
+            },
+            "required_columns": {
+                "rule": "required_columns",
+                "passed": true,
+                "missing_columns": []
+            },
+            "numeric_ranges": {
+                "rule": "numeric_ranges",
+                "passed": true,
+                "violations": {}
+            }
+        }
+    },
+    "repair": {
+        "original_rows": 10,
+        "original_columns": 6,
+        "operations": {
+            "missing_values": {
+                "total_repaired": 4,
+                "columns": {
+                    "age": {
+                        "missing_before": 2,
+                        "missing_after": 0,
+                        "repaired_count": 2,
+                        "strategy": "median",
+                        "replacement": 20.5
+                    },
+                    "email": {
+                        "missing_before": 2,
+                        "missing_after": 0,
+                        "repaired_count": 2,
+                        "strategy": "mode",
+                        "replacement": "anita@example.com"
+                    }
+                }
+            },
+            "duplicates": {
+                "rows_before": 10,
+                "rows_after": 10,
+                "duplicates_removed": 0,
+                "duplicate_percentage": 0.0
+            },
+            "outliers": {
+                "total_repaired": 3,
+                "columns": {
+                    "student_id": {
+                        "q1": 3.25,
+                        "q3": 7.75,
+                        "iqr": 4.5,
+                        "lower_bound": -3.5,
+                        "upper_bound": 14.5,
+                        "lower_outliers": 0,
+                        "upper_outliers": 0,
+                        "outliers_repaired": 0
+                    },
+                    "age": {
+                        "q1": 20.0,
+                        "q3": 21.0,
+                        "iqr": 1.0,
+                        "lower_bound": 18.5,
+                        "upper_bound": 22.5,
+                        "lower_outliers": 1,
+                        "upper_outliers": 1,
+                        "outliers_repaired": 2
+                    },
+                    "percentage": {
+                        "q1": 79.75,
+                        "q3": 89.5,
+                        "iqr": 9.75,
+                        "lower_bound": 65.125,
+                        "upper_bound": 104.125,
+                        "lower_outliers": 0,
+                        "upper_outliers": 1,
+                        "outliers_repaired": 1
+                    }
+                }
+            },
+            "numeric_types": {
+                "columns_checked": [
+                    "name",
+                    "department",
+                    "email"
+                ],
+                "columns_converted": [],
+                "conversion_details": {}
+            },
+            "boolean_types": {
+                "columns_checked": [
+                    "name",
+                    "department",
+                    "email"
+                ],
+                "columns_converted": [],
+                "conversion_details": {}
+            }
+        },
+        "total_repaired": 7,
+        "final_rows": 10,
+        "final_columns": 6,
+        "rows_removed": 0,
+        "remaining_missing_values": 0
+    }
+}
